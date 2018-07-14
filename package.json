@@ -1,0 +1,40 @@
+{
+  "name": "codeflow-discord-bot",
+  "version": "0.0.1",
+  "description": "CodeFlow Discord Bot",
+  "main": "dist/index.js",
+  "scripts": {
+    "watch": "node_modules/.bin/tsc -w",
+    "build": "node_modules/.bin/tsc",
+    "start": "node dist/index.js",
+    "start-watch": "concurrently --kill-others \"tsc -w\" \"nodemon dist/app.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mivopepe/CodeFlow-Discord-Bot.git"
+  },
+  "devDependencies": {
+    "@types/node": "^8.10.21",
+    "@types/node-fetch": "^1.6.7",
+    "concurrently": "^3.6.0",
+    "nodemon": "^1.18.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "node-fetch": "^1.7.3"
+  },
+  "keywords": [
+    "Discord",
+    "CodeFlow",
+    "Nodejs",
+    "typescript"
+  ],
+  "author": "CodeFlow Community",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mivopepe/CodeFlow-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/mivopepe/CodeFlow-Discord-Bot#readme"
+}
